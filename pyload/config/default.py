@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+a# -*- coding: utf-8 -*-
 
 from __future__ import absolute_import, unicode_literals
 
@@ -137,7 +137,7 @@ def _gen_config():
     )
     ssl_config = (
         ('activated',
-            (False, 'Activated', None, None, InputType.Bool)),
+            (True, 'Activated', None, None, InputType.Bool)),
         ('cert',
             ('ssl.crt', 'Cert file', None, None, InputType.File)),
         ('key',
@@ -145,7 +145,7 @@ def _gen_config():
     )
     reconn_config = (
         ('activated',
-            (False, 'Activated', None, None, InputType.Bool)),
+            (True, 'Activated', None, None, InputType.Bool)),
         ('script',
             (None, 'Script file', None, None, InputType.File)),
         ('wait',
@@ -153,7 +153,7 @@ def _gen_config():
     )
     proxy_config = (
         ('activated',
-            (False, 'Activated', None, None, InputType.Bool)),
+            (True, 'Activated', None, None, InputType.Bool)),
         ('type',
             ('http', 'Protocol', None, ('http', 'socks4', 'socks5'), InputType.Str)),
         ('host',
@@ -165,7 +165,7 @@ def _gen_config():
     )
     up_config = (
         ('activated',
-            (False, 'Activated', None, None, InputType.Bool)),
+            (True, 'Activated', None, None, InputType.Bool)),
         ('nodebug',
             (False, 'Don\'t update in debug mode', None, None, InputType.Bool)),
         ('periodical',
